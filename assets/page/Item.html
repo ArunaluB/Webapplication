@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/cusdah.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <title>Document</title>
+</head>
+
+<body style="color: white; background-color: #1d2630">
+
+    <div class="filter-btns">
+        <a class="navbar-brand" href="#">
+            <img src="../img/logo.png" alt="Your Logo" height="50">
+        </a>
+        
+        <button type="button" class="filter-btn" ><a href=" ../../index.html" style="text-decoration: none; color: white;">
+            Home</a></button>
+        <button type="button" class="filter-btn" ><a href="#" style="text-decoration: none; color: white;">
+            Menu</a></button>
+        <button type="button" class="filter-btn" > <a href="../page/customer.html" style="text-decoration: none; color: white;">Customer</button>
+        <button type="button" class="filter-btn" > <a href="../page/contac.html" style="text-decoration: none; color: white;">
+            contact us</a></button>
+        
+
+    </div>
+    
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-5 mb-5"> <strong>Item Managment</strong> </h1>
+        </div>
+        <div class="main row justify-content-center">
+            <form action=""  id="Customer-form" class="row justify-content-center mb-4" autocomplete="off" >
+                <div class="col-8 col-md-8  mb-3">
+                    <label for="firstName">Item Code</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter Item Code">
+                </div>
+                <div class="col-8 col-md-8   mb-3">
+                    <label for="lastName">Item Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter Item Name">
+                </div>
+                <div class="col-8 col-md-8    mb-3">
+                    <label for="PhoneNumber">Price (LKR)</label>
+                    <input type="text" class="form-control" id="PhoneNumber" placeholder="Enter Price (LKR) ">
+                </div>
+                <div class="col-8 col-md-8    mb-3">
+                    <label for="PhoneNumber">Discount</label>
+                    <input type="text" class="form-control" id="PhoneNumber" placeholder="Enter Discount ">
+                </div>
+
+
+                <div class="col-8  col-md-8   mb-3">
+                    <input class="btn btn-success add-btn" type="submit" value="Submit">
+                </div>
+                <div class="col-10  col-md-10 mt-5">
+                    <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>Item Code</th>
+                            <th>Item Name</th>
+                            <th>Price (LKR)</th>
+                            <th>Discount</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="Customer-list">
+                        <tr>
+                            <td>Nimal</td>
+                            <td>Fonseka</td>
+                            <td>0772187484</td>
+                            <td>
+                                <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+      
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    
+    <script src="../js/itemdash.js"></script>
+</body>
+
+</html>

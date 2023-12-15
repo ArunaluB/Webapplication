@@ -1,0 +1,194 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+/* variable */
+:root{
+    --main-color:#bc9667;
+    --second-color:#edeae3;
+    --text-color:#1b1b1b;
+    --bg-color:#fff;
+}
+section{
+    padding: 50px 100px;
+}
+img{
+    width: 92%;
+}
+body {
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    transition: 0.5s linear;
+    background: var(--text-color);
+}
+.logo img{
+    width: 80px;
+}
+.navbar {
+    display: flex;
+}
+.navbar a{
+    padding: 8px 17px;
+    color: var(--bg-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar a:hover{
+    background: var(--main-color);
+    border-radius: 0.2rem;
+    transition: 0.2s all linear;
+}
+.header-icon{
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    column-gap: 0.8rem;
+}
+.header-icon .bx{
+    color: var(--bg-color);
+
+}
+.header-icon .bx:hover{
+    color: var(--main-color); 
+}
+#menu-icon{
+    color: var(--bg-color);
+    font-size: 24px;
+    z-index: 100001;
+    cursor: pointer;
+    display: none;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+.home-text h1{
+    font-size: 3.4rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.home-text p {
+    font-size: 0.938rem;
+    color: var(--bg-color);
+    margin: 0.5rem 0 1.4rem;
+}
+.btn{
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background-position: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 500;
+    background-color:#0D1282;
+
+}
+.btn:hover {
+    background: #8a6f4d;
+}
+@media (max-width:1058px){
+    header{
+        padding: 16px 60px ;
+    }
+    section {
+        padding: 50px 60px;
+    }
+    .home-text h1 {
+        font-size: 2.4rem;
+    }
+}
+@media (max-width:991px){
+    header{
+        padding: 16px 4% ;
+    }
+    section {
+        padding: 50px 4%;
+    }
+    .home-text h1 {
+        font-size: 2rem;
+    }
+}
+/* Your other CSS code here */
+
+@media (max-width: 768px) {
+    header {
+        padding: 12px 4%;
+    }
+
+    #menu-icon {
+        display: initial;
+    }
+
+    .navbar {
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--second-color);
+        row-gap: 1.4rem;
+        padding: 20px;
+        transition: top 0.3s; /* Added transition property for 'top' */
+        text-align: center;
+    }
+
+    .navbar a {
+        color: var(--text-color);
+    }
+
+    .navbar a:hover {
+        color: var(--bg-color);
+    }
+
+    .navbar.active {
+        top: 100%;
+    }
+}
+@media (max-width: 360px) {
+    header{
+        padding: 11px 4%;
+    }
+    .logo img {
+        width: 45px;
+    }
+    .home-text {
+        padding-top: 15px;
+    }
+    .home-text h1 {
+        font-size: 1.9rem;
+    }
+    .home-text p{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+}
+

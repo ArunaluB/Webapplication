@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/menucss.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="filter-btns1">
+        <a class="navbar-brand" href="#">
+            <img src="../img/logo.png" alt="Your Logo" height="50">
+        </a>
+        <button type="button" class="filter-btn1">
+            <a href=" ../../index.html" style="text-decoration: none; color: red;">
+                Home</a></button>
+        <button type="button" class="filter-btn1">
+            <a href="#" style="text-decoration: none; color: red;">
+                Menu</a></button>
+        <button type="button" class="filter-btn1">
+            <a href="../page/customer.html" style="text-decoration: none; color: red;">
+                Customer</a></button>
+        <button type="button" class="filter-btn1">
+            <a href="../page/contac.html" style="text-decoration: none; color: red;">
+                contact us</a></button>
+
+
+    </div>
+    <br>
+    <br>
+    <div class="filter-btns">
+        <button type="button" class="filter-btn" onclick="filterProduct('all')">ALL</button>
+        <button type="button" class="filter-btn" onclick="filterProduct('Burgers')">Burgers</button>
+        <button type="button" class="filter-btn" onclick="filterProduct('Submarines')">Submarines</button>
+        <button type="button" class="filter-btn" onclick="filterProduct('Fries')">Fries</button>
+        <button type="button" class="filter-btn" onclick="filterProduct('Pasta')">Pasta</button>
+        <button type="button" class="filter-btn" onclick="filterProduct('Chicken')">Chicken</button>
+        <button type="button" class="filter-btn" onclick="filterProduct('Beverages')">Beverages</button>
+
+    </div>
+    <div class="container">
+        <header>
+            <div class="title">PRODUCT LIST</div>
+            <div class="icon-cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+                </svg>
+                <span>0</span>
+            </div>
+
+
+        </header>
+        <div class="listProduct" id="productList">
+
+        </div>
+    </div>
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+
+        </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut" id="checkoutButton" onclick="checkOutf()">
+
+                <a href="../page/checkout.html" style=" text-decoration: none; color: black;">CHECKOUT</a>
+            </button>
+        </div>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
