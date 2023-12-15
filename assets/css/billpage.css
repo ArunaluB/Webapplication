@@ -117,3 +117,51 @@ body {
 .invoice .footer {
   margin-top: 30px;
 }
+
+.content {
+  padding: 20px;
+}
+
+.page-down-button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%; /* Adjust to your preference */
+  transform: translateX(-50%);
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.right-side-button {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+}
+
+
