@@ -1,7 +1,7 @@
 let invoicecount = 0;
 function goToMenu() {
     window.location.href = "../page/Menu.html";
-  }
+}
 
 jQuery(document).ready(function () {
     $('#checkoutB').click(function () {
@@ -45,3 +45,4 @@ function loadInvoiceCount() {
 }
 
 updateCurrentDate(); // Call the function to update the current date
+

@@ -4,10 +4,10 @@ let body = document.querySelector('body');
 let listProductHTML = document.querySelector('.listProduct');
 let listCartHTML = document.querySelector('.listCart');
 let iconCartSpan = document.querySelector('.icon-cart span');
-let  cartTranfer= [];
+let cartTranfer = [];
 let TotalQTY = 0;
-let itemQTY =0;
-let TotalDis =0;
+let itemQTY = 0;
+let TotalDis = 0;
 
 let listProducts = [];
 
@@ -470,7 +470,7 @@ const addToCart = (product_id) => {
         cart = [{
             product_id: product_id,
             quantity: 1
-            
+
         }];
     } else if (positionThisProductInCart < 0) {
         cart.push({
@@ -488,7 +488,7 @@ const addCartToMemory = () => {
 }
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
-    TotalQTY =0;
+    TotalQTY = 0;
     let totalQuantity = 0;
     if (cart.length > 0) {
         cart.forEach(item => {
@@ -504,9 +504,9 @@ const addCartToHTML = () => {
             // infor load is ordee detals
             console.log(info)
             // Calculate total price
-            let totalDis= ((info.price * item.quantity)*info.Discount)/100;
-            TotalDis+=totalDis;
-            TotalQTY  += info.price * item.quantity;
+            let totalDis = ((info.price * item.quantity) * info.Discount) / 100;
+            TotalDis += totalDis;
+            TotalQTY += info.price * item.quantity;
             newItem.innerHTML = `
             <div class="image">
                     <img src="${info.image}">
@@ -514,7 +514,7 @@ const addCartToHTML = () => {
                 <div class="name">
                 ${info.name}
                 </div>
-                <div class="totalPrice">RS${(info.price * item.quantity)-totalDis}</div>
+                <div class="totalPrice">RS${(info.price * item.quantity) - totalDis}</div>
                 <div class="quantity">
                     <span class="minus">-</span>
                     <span>${item.quantity}</span>
@@ -523,10 +523,10 @@ const addCartToHTML = () => {
             `;
         })
     }
-    
-    itemQTY=totalQuantity;
+
+    itemQTY = totalQuantity;
     iconCartSpan.innerText = totalQuantity;
- 
+
 }
 
 listCartHTML.addEventListener('click', (event) => {
@@ -595,7 +595,6 @@ function filterProduct(type) {
 displayProducts("all");
 
 function checkOutf() {
-    
     console.log(itemQTY)
     console.log(TotalQTY);
     console.log(cartTranfer);
