@@ -2,9 +2,9 @@
 <html>
 
 <head>
-  <title>Mos Burger</title>
+  <title>Mos Buger</title>
   <link rel="stylesheet" type="text/css" href="../css/billpage.css">
-  
+
 </head>
 
 <body>
@@ -29,29 +29,57 @@
             <p class="p_title" id="invoiceid"></p>
           </div>
           <div class="i_address text_right">
-            <p>TO</p>
+            <p>Branch</p>
             <p class="p_title">
-              Nimal Karunanayaka <br />
-              <span>0772187484</span><br />
-              <span>Matara</span>
+              New Gale Road, <br />
+              Karapitiya.
             </p>
           </div>
         </div>
       </div>
       <div class="body">
-        <table class="table table-striped table-dark">
-          <thead>
-              <tr>
-                  <th>QTY</th>
-                  <th>Name</th>
-                  <th>Unit Price</th>
-                  <th>Amount</th>
-              </tr>
-          </thead>
-          <tbody id="Customer-list">
-              <!-- Table rows will be dynamically added here -->
-          </tbody>
-      </table>
+        <div class="i_table">
+          <div class="i_table_head">
+            <div class="i_row">
+            </div>
+          </div>
+          <div class="i_table_body">
+            <div class="i_row">
+            </div>
+            <div class="i_row">
+            </div>
+            <div class="i_row">
+            </div>
+          </div>
+          <div class="i_table_foot">
+            <div class="i_row">
+              <div class="i_col w_15">
+                <p></p>
+              </div>
+              <div class="i_col w_55">
+                <p></p>
+              </div>
+              <div class="i_col w_15">
+                <p >Total Item</p>
+                <p>Discount%</p>
+
+              </div>
+              <div class="i_col w_15">
+                <p id="totalitem"></p>
+                <p id="totaldis"></p>
+              </div>
+            </div>
+            <div class="i_row grand_total_wrap">
+              <div class="i_col w_50">
+              </div>
+              <div class="i_col w_50 grand_total">
+                <p id="totalQty"><span>GRAND TOTAL:</span>
+                </p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="footer">
         <div class="i_row">
@@ -70,7 +98,7 @@
     </div>
   </section>
   <button class="right-side-button" id="checkoutB" onclick="incrementNumber()">Print Bill </button>
-  
+
 
 
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

@@ -598,8 +598,24 @@ function checkOutf() {
     console.log(itemQTY)
     console.log(TotalQTY);
     console.log(cartTranfer);
+
 }
 
+function updateItem(){
+    document.getElementById("totalitem").textContent =itemQTY ;
+}
+function updatetatalQty(){
+    document.getElementById("totalQty").textContent =TotalQTY ;
+}
+function updatetataldis(){
+    document.getElementById("totaldis").textContent =TotalDis ;
+}
+ 
+function billsubmit() {
+    updateItem();
+    window.location.href = '../page/billpage.html';
+
+}
 
 
 
