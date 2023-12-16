@@ -553,7 +553,7 @@ const changeQuantityCart = (product_id, type) => {
                 let changeQuantity = cart[positionItemInCart].quantity - 1;
                 if (changeQuantity > 0) {
                     cart[positionItemInCart].quantity = changeQuantity;
-                    totalQty+=changeQuantity
+                    TotalQTY += changeQuantity; // Fix the variable name here
                 } else {
                     cart.splice(positionItemInCart, 1);
                 }
@@ -563,6 +563,7 @@ const changeQuantityCart = (product_id, type) => {
     addCartToHTML();
     addCartToMemory();
 }
+
 // Function to display products based on the filter
 function displayProducts(filter) {
     listProductHTML.innerHTML = ""; // Clear existing products
@@ -605,7 +606,4 @@ function checkOutf() {
 
 // Call the initApp function to initialize the app
 initApp();
-
-
-/* bill Genarate */
 

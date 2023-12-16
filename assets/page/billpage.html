@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <button class="back-button" onclick="goBack()">Back</button>
+  <button class="back-button" onclick="goToMenu()">Back</button>
 
   <section>
     <div class="invoice">
@@ -19,14 +19,14 @@
           </div>
           <div class="i_title">
             <h2>INVOICE</h2>
-            <p class="p_title text_right">
+            <p class="p_title text_right" id="currentDate">
               April 20, 2023
             </p>
           </div>
         </div>
         <div class="i_row">
           <div class="i_number">
-            <p class="p_title">INVOICE NO: 3452324</p>
+            <p class="p_title" id="invoiceid">INVOICE NO: 3452324</p>
           </div>
           <div class="i_address text_right">
             <p>TO</p>
@@ -148,7 +148,7 @@
       </div>
     </div>
   </section>
-  <button class="right-side-button" id="checkoutB">Print Bill </button>
+  <button class="right-side-button" id="checkoutB" onclick="incrementNumber()">Print Bill </button>
   
 
 
